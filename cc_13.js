@@ -32,3 +32,12 @@ function addEmployeeCard(name, position) {
 addEmployeeCard('Daicco','Supply Chain Manager');
 addEmployeeCard('Sunny', 'Business Analyst III');
 addEmployeeCard('Neil', 'Lead Janitor');
+
+// Task 3: Converting NodeLists to Arrays for Bulk Updates
+function highlightEmployeeCards() {
+    const employeeCards = Array.from(document.querySelectorAll('.employee-card'));
+    employeeCards.forEach(card => card.style.border = '2px solid blue');
+}
+
+
+
