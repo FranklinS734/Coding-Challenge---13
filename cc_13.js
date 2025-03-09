@@ -39,5 +39,7 @@ function highlightEmployeeCards() {
     employeeCards.forEach(card => card.style.border = '2px solid blue');
 }
 
-
-
+// Task 4: Implementing Removal of Employee Cards with Event Bubbling
+employeeContainer.addEventListener("click", function () {
+    console.log("An employee card was clicked.");
+});
